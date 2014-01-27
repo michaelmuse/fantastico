@@ -2,6 +2,7 @@ class AirplanesController < ApplicationController
 
   def new  
     #sams edit!!!!
+    #sam's second edit
   end
 
   def show
