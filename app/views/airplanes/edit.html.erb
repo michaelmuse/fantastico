@@ -1,0 +1,17 @@
+<h1>Edit Plane</h1>
+
+<%= form_for @airplane do |f| %>
+  <%= f.label :name, "Name:" %>
+  <%= f.text_field :name, placeholder: "Name", class: "form-control" %>
+
+  <%= f.label :manufacturer, "Manufacturer:" %>
+  <%= f.text_field :manufacturer, placeholder: "Manufacturer", class: "form-control" %>
+
+  <%= f.label :year_made, "Year Made:" %>
+  <%= f.text_field :year_made, placeholder: "Year Made", class: "form-control" %>
+
+  <%= f.label :passenger_capacity, "Passenger Capacity:" %>
+  <%= f.text_field :passenger_capacity, placeholder: "Passenger Capacity", class: "form-control" %>
+
+  <%= f.submit nil, id:"submit" %>
+<% end %>
