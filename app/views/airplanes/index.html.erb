@@ -1,0 +1,10 @@
+<h1>All Airplanes</h1>
+<table>
+  <% @airplanes.each do |plane| %>
+    <tr>
+      <td><%= link_to plane.name, airplane_path(plane) %></td>
+      <td><%= plane.manufacturer %></td>
+      <td><%= plane.year_made %></td>
+    </tr>
+  <% end %>
+</table>
