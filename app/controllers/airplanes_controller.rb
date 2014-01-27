@@ -1,7 +1,5 @@
 class AirplanesController < ApplicationController
 
-  def new
-  end
   def create
     Airplane.create({
       name: params[:name],
@@ -10,9 +8,16 @@ class AirplanesController < ApplicationController
       year_made: params[:year_made]
       })
       redirect_to airplanes_path    
+  def index
+    @airplanes = Airplane.all
+  end
+
+  def new  
+
   end
 
   def show
+    @airplane = Airplane.find(params[:id])
   end
 
   def edit
