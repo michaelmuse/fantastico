@@ -1,0 +1,14 @@
+<h1>All Airplanes</h1>
+<p><%= link_to "Create a new plane", new_airplane_path %></p>
+
+<table>
+  <% @airplanes.each do |plane| %>
+    <tr>
+      <td><%= link_to plane.name, airplane_path(plane) %></td>
+      <td><%= plane.manufacturer %></td>
+      <td><%= plane.year_made %></td>
+      <td><%= link_to "edit", edit_airplane_path(plane) %> </td>
+      <td><%= button_to "delete", plane, method: :delete %></td>
+    </tr>
+  <% end %>
+</table>
