@@ -1,7 +1,6 @@
 class AirplanesController < ApplicationController
 
   def new  
-    #michael's edit
   end
 
   def show
