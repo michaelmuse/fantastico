@@ -1,6 +1,7 @@
 == Welcome to Rails
 
 Rails is a web-application framework that includes everything needed to create
+this is the change that Michael Muse inserted on line 4
 database-backed web applications according to the Model-View-Control pattern.
 
 This pattern splits the view (also called the presentation) into "dumb"
