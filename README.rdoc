@@ -1,3 +1,8 @@
 Sam's Readme is the best...
 
+<<<<<<< HEAD
 isn't it?
+=======
+
+Editing line 4.
+>>>>>>> 692067289cb5468e8a87c38d8fb011cf870dfa76
