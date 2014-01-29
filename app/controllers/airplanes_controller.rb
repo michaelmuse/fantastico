@@ -7,7 +7,9 @@ class AirplanesController < ApplicationController
       passenger_capacity: params[:passenger_capacity],
       year_made: params[:year_made]
       })
-      redirect_to airplanes_path    
+      redirect_to airplanes_path  
+  end
+
   def index
     @airplanes = Airplane.all
   end
@@ -34,7 +36,9 @@ class AirplanesController < ApplicationController
     redirect_to airplanes_path
   end
 
-  def destroy    
+  def destroy
+    Airplane.find(params[:id]).destroy
+    redirect_to root_path  
   end
 
 end

@@ -1,5 +1,5 @@
 Fantastico::Application.routes.draw do
-
+  root to: 'airplanes#index'
   resources :airplanes
   # The priority is based upon order of creation:
   # first created -> highest priority.
