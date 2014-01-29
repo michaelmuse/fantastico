@@ -5,3 +5,11 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+25.times do
+  Airplane.create(
+    name: Faker::Name::first_name, 
+    manufacturer: "Boeing",
+    passenger_capacity: rand(5..500),
+    year_made: rand(1900..2014)
+  )  
+end
