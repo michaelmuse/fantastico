@@ -12,3 +12,15 @@
  *= require_self
  *= require_tree .
  */
+
+.container {
+  margin-top: 50px;
+}
+
+ body {
+  background-image: url('http://www.bestcoloringpagesforkids.com/wp-content/uploads/2013/06/Coloring-Pages-of-Airplane.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  font-family: helvetica;
+ }
