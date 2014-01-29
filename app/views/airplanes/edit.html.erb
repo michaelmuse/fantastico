@@ -1,6 +1,6 @@
 <h1>Edit Plane</h1>
 
-<%= form_for @airplane do |f| %>
+<%= form_for @airplane, html: {class: "form-horizontal", role: "form"} do |f| %>
   <%= f.label :name, "Name:" %>
   <%= f.text_field :name, placeholder: "Name", class: "form-control" %>
 
@@ -13,5 +13,5 @@
   <%= f.label :passenger_capacity, "Passenger Capacity:" %>
   <%= f.text_field :passenger_capacity, placeholder: "Passenger Capacity", class: "form-control" %>
 
-  <%= f.submit nil, id:"submit" %>
+  <%= f.submit nil, id:"submit", class: "btn btn-lg btn-primary" %>
 <% end %>
