@@ -2,6 +2,13 @@
 <p><%= link_to "Create a new plane", new_airplane_path %></p>
 
 <table class="table table-hover">
+    <tr>
+      <th>Name:</th>
+      <th>Manufacturer:</th>
+      <th>Year Made:</th>
+      <th>Edit:</th>
+      <th>Delete:</th>
+    </tr>
   <% @airplanes.each do |plane| %>
     <tr>
       <td><%= link_to plane.name, airplane_path(plane) %></td>
